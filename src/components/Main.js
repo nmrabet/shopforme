@@ -11,6 +11,7 @@ export default function Main() {
       <h5 className='page'>Home</h5>
       <div className='container'>
         <h2 className='dashboard'>Dashboard</h2>
+        
         <div className='all-orders'>
           <div className='categories'>
             <h4>Order no.</h4>
