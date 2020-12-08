@@ -1,33 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "./Main.css";
+import ordersData from '../assets/ordersData.json';
 
 export default function Main() {
-  const [data, setData] = useState([]);
-
-  const getData = () => {
-    fetch("./ordersData.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then(function (response) {
-        console.log(response);
-        return response.json();
-      })
-      .then(function (myJson) {
-        console.log(myJson);
-        setData(myJson);
-      });
-  };
-  useEffect(() => {
-    getData();
-  }, []);
+  const ordersArray = ordersData.orders;
+  const orderDetails = ordersArray.map(order => 
+    <div className='categories'>
+      <p>{order.orderNo}</p>
+      <p>{order.date}</p>
+      <button>See order details</button>
+    </div>)
 
   return (
     <div className='main'>
       <h2 className='orders'>Orders List</h2>
-
       <h5 className='page'>Home</h5>
       <div className='container'>
         <h2 className='dashboard'>Dashboard</h2>
@@ -38,9 +24,10 @@ export default function Main() {
             <h4>Details</h4>
           </div>
 
-          <div>
-            {data && data.length > 0 && data.map((item) => <p>{item.about}</p>)}
+          <div className='display-data'>
+            {orderDetails}
           </div>
+
         </div>
       </div>
     </div>
