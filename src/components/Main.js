@@ -1,15 +1,9 @@
 import React from "react";
 import "./Main.css";
-import ordersData from '../assets/ordersData.json';
+import ordersData from "../assets/ordersData.json";
 
 export default function Main() {
   const ordersArray = ordersData.orders;
-  const orderDetails = ordersArray.map(order => 
-    <div className='categories'>
-      <p>{order.orderNo}</p>
-      <p>{order.date}</p>
-      <button>See order details</button>
-    </div>)
 
   return (
     <div className='main'>
@@ -25,11 +19,20 @@ export default function Main() {
           </div>
 
           <div className='display-data'>
-            {orderDetails}
+            {ordersArray.map(OrderLi)}
           </div>
-
         </div>
       </div>
     </div>
+  );
+}
+
+function OrderLi(order) {
+  return (
+    <ul className='order-container'>
+      <li>{order.orderNo}</li>
+      <li>{order.date}</li>
+      <li className='details-link'>See order details</li>
+    </ul>
   );
 }
