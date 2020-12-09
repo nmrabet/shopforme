@@ -15,7 +15,7 @@ function App() {
           <Route exact path='/'>
             <Main />
           </Route>
-          <Route path='/home/orderdetails'>
+          <Route path='/home/:orderId'>
             <OrderDetail />
           </Route>
         </Switch>

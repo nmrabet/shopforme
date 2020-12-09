@@ -3,34 +3,26 @@
     {
       "orderNo": "2568853",
       "_id": "1",
-      "customer": [
-        {
-          "customerId": "11045",
-          "firstName": "James",
-          "lastName": "Brown",
-          "address": "1164 Melrose Place",
-          "city": "Los Angeles",
-          "state": "California",
-          "zip": "68004"
-        }
-      ],
+      "status": "Delivered",
+      "customerId": "11045",
+      "name": "James Brown",
+      "address": "1164 Melrose Place",
+      "city": "Los Angeles",
+      "state": "California",
+      "zip": "68004",
       "date": "10 december 2020 1:54:23 PM",
       "articles": ["peaches", "carrots", "diet coke", "bread", "eggs"]
     },
     {
       "orderNo": "2568854",
       "_id": "2",
-      "customer": [
-        {
-          "customerId": "11046",
-          "firstName": "Sara",
-          "lastName": "Lance",
-          "address": "2654 Sutton Street",
-          "city": "San Francisco",
-          "state": "California",
-          "zip": "68004"
-        }
-      ],
+      "status": "On its way",
+      "customerId": "11046",
+      "name": "Sara Lance",
+      "address": "2654 Sutton Street",
+      "city": "San Francisco",
+      "state": "California",
+      "zip": "68004",
       "date": "12 february 2021 9:34:12 AM",
       "articles": [
         "toilet paper",
@@ -43,17 +35,13 @@
     {
       "orderNo": "2568855",
       "_id": "3",
-      "customer": [
-        {
-          "customerId": "11047",
-          "firstName": "Alex",
-          "lastName": "Vause",
-          "address": "1042 Warwick avenue",
-          "city": "Chicago",
-          "state": "Illinois",
-          "zip": "60402"
-        }
-      ],
+      "status": "Ready to go",
+      "customerId": "11047",
+      "name": "Alex Vause",
+      "address": "1042 Warwick avenue",
+      "city": "Chicago",
+      "state": "Illinois",
+      "zip": "60402",
       "date": "20 september 2021 8:25:59 PM",
       "articles": [
         "beef",
