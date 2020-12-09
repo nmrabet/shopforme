@@ -22,7 +22,7 @@ export default function OrderDetail() {
         <h3 className='shipping'>Shipping Address</h3>
         <h5>Name: {thisOrder.name}</h5>
         <h5>
-          Adress: {thisOrder.address}, {thisOrder.zip}, {thisOrder.city},{" "}
+          Address: {thisOrder.address}, {thisOrder.zip}, {thisOrder.city},{" "}
           {thisOrder.state}{" "}
         </h5>
       </div>
