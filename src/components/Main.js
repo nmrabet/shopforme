@@ -1,7 +1,7 @@
 import React from "react";
 import "./Main.css";
 import ordersData from "../assets/ordersData.json";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export default function Main() {
   const ordersArray = ordersData.orders;
@@ -12,7 +12,7 @@ export default function Main() {
       <h5 className='page'>Home</h5>
       <div className='container'>
         <h2 className='dashboard'>Dashboard</h2>
-        
+
         <div className='all-orders'>
           <div className='categories'>
             <h4>Order no.</h4>
@@ -21,10 +21,9 @@ export default function Main() {
           </div>
 
           <div className='display-data'>
-            {ordersArray.map((order) => {
-              <OrderLi order = {order} />
-            )}}
-
+            {ordersArray.map((order) => (
+              <OrderLi order={order} />
+            ))}
           </div>
         </div>
       </div>
@@ -39,7 +38,7 @@ function OrderLi({ order }) {
       <li>{order.date}</li>
       <li key={order._id}>
         <Link to={`/home/${order._id}`} className='details-link'>
-        See order details
+          See order details
         </Link>
       </li>
     </ul>
