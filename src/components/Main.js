@@ -21,7 +21,10 @@ export default function Main() {
           </div>
 
           <div className='display-data'>
-            {ordersArray.map(OrderLi)}
+            {ordersArray.map((order) => {
+              <OrderLi order = {order} />
+            )}}
+
           </div>
         </div>
       </div>
@@ -29,7 +32,7 @@ export default function Main() {
   );
 }
 
-function OrderLi(order) {
+function OrderLi({ order }) {
   return (
     <ul className='order-container'>
       <li>{order.orderNo}</li>
