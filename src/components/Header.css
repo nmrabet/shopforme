@@ -7,6 +7,12 @@
     padding: 2em 3em;
   }
   
+.title {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
   .login {
     list-style-type: none;
     display: flex;
