@@ -14,7 +14,7 @@ export default function OrderDetail() {
                 <h5>Order No. {ordersArray.orderNo}</h5>
                 <h5>Status:</h5>
                 <h5>Placed on:{ordersArray.date}</h5>
-                <button>Display items</button>
+                <ul>Show items</ul>
                 <h3 className='shipping'>Shipping Address</h3>
                 <h5>Name:{ordersArray.firstname} {ordersArray.lastname}</h5>
                 <h5>Adress: {ordersArray.address} </h5>
