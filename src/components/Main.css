@@ -54,9 +54,10 @@ li {
 }
 
 .details-link {
+  text-decoration: none;
   padding: 0.2em 0.8em;
   background: #0f9285;
-  color: white;
+  color: #fff;
   font-weight: 700;
   font-size: 12px;
   text-align: center;

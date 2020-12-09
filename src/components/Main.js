@@ -34,8 +34,8 @@ function OrderLi(order) {
     <ul className='order-container'>
       <li>{order.orderNo}</li>
       <li>{order.date}</li>
-      <li key={order._id} className='details-link'>
-        <Link to={`/home/${order._id}`}>
+      <li key={order._id}>
+        <Link to={`/home/${order._id}`} className='details-link'>
         See order details
         </Link>
       </li>
