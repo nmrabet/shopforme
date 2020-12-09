@@ -4,6 +4,10 @@
     height: 85vh;
 }
 
+.orderDetail-component * {
+    margin-bottom: 0.5em;
+}
+
 .orderDetail-title {
     text-align: center;
 }
@@ -19,7 +23,7 @@
 
 .btn-order {
     text-align: center;
-    margin-top: 2em;
+    margin-top: 4em;
 }
 
 .reorder-btn,
