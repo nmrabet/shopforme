@@ -1,0 +1,53 @@
+.orderDetail-component {
+    padding-top: 5em;
+    background-color: whitesmoke;
+    height: 85vh;
+}
+
+.orderDetail-title {
+    text-align: center;
+}
+
+.detailed-order {
+    margin: 1em auto;
+    width: 70%;
+}
+
+.shipping {
+    margin-top: 1em;
+}
+
+.btn-order {
+    text-align: center;
+    margin-top: 2em;
+}
+
+.reorder-btn,
+.delete-btn {
+    padding: 1em 2em;
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #0f9285;
+    color: white;
+    border-radius: 5px;
+    border: 1px;
+}
+
+.delete-btn {
+    display: inline-block;
+    margin-left: 3em;
+}
+
+.delete-btn:hover, .reorder-btn:hover {
+    filter: brightness(95%);
+  }
+  
+  .delete-btn:active, .reorder-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .delete-btn:disabled, .reorder-btn:disabled {
+    cursor: default;
+    filter: brightness(30%);
+  }
+  
